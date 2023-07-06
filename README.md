@@ -1,4 +1,4 @@
-# Django application
+# Docker. Packing a simple script.
 
 ---
 ![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/shared__docker__example_2023_06_23/actions/workflows/main-workflow.yml/badge.svg)
