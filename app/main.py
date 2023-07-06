@@ -1,18 +1,15 @@
-from app.services.bla import (
-    bla1,
-    bla2,
-)
-from app.services.check_file_exists import check_file_exists
-from app.services.show_greeting import show_greeting
+from faker import Faker
+
+faker = Faker('uk_UA')
+
+def generate_random_contact():
+    full_name = faker.name()
+    phone_number = faker.phone_number()
+    while not phone_number.startswith('+380'):
+        phone_number = faker.phone_number()
+    print(f'ФИО: {full_name}')
+    print(f'Номер телефона: {phone_number}')
 
 
 def main():
-    show_greeting()
-    check_file_exists()
-
-    bla1()
-    bla2(
-        foo_1=1,
-        #
-        foo_3=3,
-    )
+    generate_random_contact()
