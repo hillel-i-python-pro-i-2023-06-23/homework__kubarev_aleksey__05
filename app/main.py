@@ -6,12 +6,10 @@ def generate_random_contact():
     # Generates and prints a random contact
     full_name = faker.name()
     phone_number = faker.phone_number()
-    full_address = faker.address()
     while not phone_number.startswith('+380'):
         phone_number = faker.phone_number()
-    print(f'Full name: {full_name}\n'
-          f'Phone number: {phone_number}\n'
-          f'Full address: {full_address}')
+    print(f'ФИО: {full_name}')
+    print(f'Номер телефона: {phone_number}')
 
 
 def main():
