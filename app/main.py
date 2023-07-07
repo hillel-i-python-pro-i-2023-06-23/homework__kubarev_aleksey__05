@@ -9,7 +9,8 @@ def generate_random_contact():
     full_address = faker.address()
     while not phone_number.startswith('+380'):
         phone_number = faker.phone_number()
-    print(f'Full name: {full_name}\n'
+    print('Information about the person:\n'
+          f'Full name: {full_name}\n'
           f'Phone number: {phone_number}\n'
           f'Full address: {full_address}')
 
